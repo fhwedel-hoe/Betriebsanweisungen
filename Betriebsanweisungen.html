@@ -44,17 +44,23 @@ ul {
   display: flex;
 }
 .dreispaltig > * {
-  flex-grow: 1;
   padding: 0.2em 0.5em;
+  flex-grow: 1;
+  white-space: nowrap;
 }
 .dreispaltig div:nth-child(1){
   text-align: left;
+  font-size: 10pt;
 }
 .dreispaltig div:nth-child(2){
   text-align: center;
 }
 .dreispaltig div:nth-child(3){
   text-align: right;
+  font-size: 10pt;
+}
+.logo {
+  width: 9em;
 }
 .padding {
   padding: 0 0.5em;
@@ -65,6 +71,10 @@ ul {
   margin-bottom: 0.2em;
   margin-left: 0.2em;
 }
+.footer {
+  font-size: 10pt;
+  margin-top: .5em;
+}
     </style>
   </head>
   <body>
@@ -72,7 +82,7 @@ ul {
 <div class="seite">
 <div class="dreispaltig">
   <div>
-    <img src="logo-fhwedel.svg" style="height:3em;"><br/>
+    <img src="logo-fhwedel.svg" class="logo"><br/>
     Prof. Dr. E. Harms
   </div>
   <div>
@@ -129,26 +139,28 @@ ul {
   <li> Ersthelfer informieren.
   <li> Verletzten betreuen.
 </ul>
+<div class="footer">
 Allgemeiner Notruf: 112, Krankentransport: 04103-4373<br/>
 Krankenhaus: Asklepios Westklinikum 040-81910<br/>
 Ersthelfer: 04103-8048-912<br/>
+</div>
 </div>
 </div><!-- Seite Robotik -->
 
 <div class="seite">
 <div class="dreispaltig">
   <div>
-    <img src="logo-fhwedel.svg" style="height:3em;"><br/>
+    <img src="logo-fhwedel.svg" class="logo"><br/>
     Prof. Dr. E. Harms
   </div>
   <div>
-    <h1>Workplace Safety Instruction</h1>
+    <h1>Safety Instructions</h1>
     <p>for working in the<br/><b>Robotics Lab</b></p>
   </div>
   <div>
     Robotics Lab<br/>
-    Printed on 5. Mai 2021<br/>
-    Edited by Hermann Höhne, MSc.<br/>
+    Printed on 8th Sept. 2022<br/>
+    Hermann Höhne, MSc.<br/>
   </div>
 </div>
 <h2>Hazards</h2>
@@ -171,9 +183,10 @@ Ersthelfer: 04103-8048-912<br/>
   <li> Some machines or tools have a specific set of instructions which must also be considered.
   <li> Tools must be put back to their place after use.
   <li> Remove clothing accessoires to avoid unwanted interference with devices such as tangling or short-ciruiting.
-  <li> Use caution while interfering with electrical parts of custom-built devices. Only interfere with low voltage electrical installations.
+  <li> Use caution while interfering with electrical parts, especially with self-made devices. Only low voltage applications are allowed.
   <li> Eating and drinking is prohibited with the exception of plain water in closed containers.
   <li> Upon leaving the lab, cut the power by activating the emergency stop labeled with „Not-Aus“.
+  <li> Tread carefully and move slowly when walking the parcours.
 </ul>
 </div>
 <h2>What to do in case of Danger</h2>
@@ -194,16 +207,149 @@ Ersthelfer: 04103-8048-912<br/>
   <li> Call first aid.
   <li> Tend to the injured.
 </ul>
-Emergency Services: 112, Non-Emergency Injured Transport: 04103-4373<br/>
+<div class="footer">
+Emergency Services: 112<br/>
+Non-emergency medical transport: 04103-4373<br/>
 Hospital: Asklepios Westklinikum 040-81910<br/>
 On-Site First Aid: 04103-8048-912<br/>
+</div>
 </div>
 </div><!-- Seite Robotics Lab -->
 
 <div class="seite">
 <div class="dreispaltig">
   <div>
-    <img src="logo-fhwedel.svg" style="height:3em;"><br/>
+    <img src="logo-fhwedel.svg" class="logo"><br/>
+    Prof. Dr. E. Harms
+  </div>
+  <div>
+    <h1>Betriebsanweisung</h1>
+    <p>für<br/><b>Industrieroboter</b></p>
+  </div>
+  <div>
+    Robotik<br/>
+    Stand: 8. September 2022<br/>
+    Hermann Höhne, MSc.<br/>
+  </div>
+</div>
+<h2>Gefahren für Mensch und Umwelt</h2>
+<div class="padding">
+<img src="Symbole/ISO_7010_W020.svg">
+<ul>
+  <li>Gefahr durch sich bewegende Roboter.
+</ul>
+</div>
+<h2>Schutzmaßnahmen und Verhaltensregeln</h2>
+<div class="padding">
+<ul>
+  <li> Niemals alleine arbeiten.
+  <li> Während der Roboter in Betrieb ist, muss stets ein NOT-Aus-Schalter in erreichbarer Nähe gehalten werden, damit er jederzeit ausgelöst werden kann.
+  <!--<li> Es ist immer nur ein Roboter zur Zeit zu betreiben.
+  <li> Es gibt mehrere Roboter, deren individuelle Bediengeräte über spezifische Not-Aus-Schalter verfügen. Nicht relevante Bediengeräte sind daher vor dem Aktivieren des Roboters vom Arbeitsplatz zu entfernen.-->
+  <li> Es ist verboten, den Roboter zu Betreiben, während sich Personen oder unerwünschte Objekte im Arbeitsbereich des Roboters aufhalten.
+  <li> Während des experimentellen Betriebs ist der Roboter mit reduzierter Geschwindigkeit zu bewegen (Modus T1 bei 100 % oder Modus AUT bei 10 % der Maximalgeschwindigkeit). Diese Einstellung muss vor dem Betrieb des Roboters kontrolliert werden.
+  <li> Der Roboter darf nicht programmiert werden, gefährliche Bewegungen auszuführen. Insbesondere schnelle Rüttelbewegungen sind verboten. Der Roboter (einschließlich Werkzeug) soll nicht für Kollisionen, Quetschungen oder sonstige unerwünschte Bewegungen verwendet werden.
+  <li> Alle Bewegungen müssen so programmiert werden, dass keine Kollisionen geschehen. Neue oder geänderte Programme müssen im Testmodus gestartet werden. Der Roboter ist aufmerksam zu beobachten. Nicht vergessen: Punkt-zu-Punkt (PTP) Bewegungen folgen keinen deterministischen Pfaden.
+  <li> Nach der Arbeit ist der Roboter ordnungsgemäß außer Betrieb zu nehmen. Der Hauptschalter ist nach dem Herunterfahren zu betätigen.
+</ul>
+</div>
+<h2>Verhalten bei Störung und im Gefahrenfall</h2>
+<div class="padding">
+<ul>
+  <li> Betritt eine Person den Arbeitsbereich eines Roboters, muss der Roboter sofort angehalten werden. Die Not-Aus-Schaltung ist zu verwenden.
+  <li> Bei Gefahr einer Kollision muss der Roboter sofort angehalten werden.
+  <li> Bei mangelndem Fachwissen zur Handhabung von Geräten: Aufsicht fragen.
+  <li> Bei beschädigten oder fehlenden Schutzvorrichtungen: Aufsicht informieren.
+  <li> Schäden oder Mängel nur vom Fachmann beseitigen lassen.
+  <li> Arbeit bis zur Beseitigung des Mangels aus Sicherheitsgründen einstellen.
+  <li> Nach dem Auslösen der Sicherung zuerst die Quelle der Störung identifizieren.
+</ul>
+</div>
+<h2>Verhalten bei Unfällen – Erste Hilfe</h2>
+<div class="padding">
+<img src="Symbole/ISO_7010_E003.svg">
+<ul>
+  <li> Not-Aus verwenden, Maschinen abschalten, Arbeitsplätze sichern.
+  <li> Ersthelfer informieren.
+  <li> Verletzten betreuen.
+</ul>
+<div class="footer">
+Allgemeiner Notruf: 112, Krankentransport: 04103-4373<br/>
+Krankenhaus: Asklepios Westklinikum 040-81910<br/>
+Ersthelfer: 04103-8048-912<br/>
+</div>
+</div>
+</div><!-- Seite Industrieroboter -->
+
+<div class="seite">
+<div class="dreispaltig">
+  <div>
+    <img src="logo-fhwedel.svg" class="logo"><br/>
+    Prof. Dr. E. Harms
+  </div>
+  <div>
+    <h1>Safety Instructions</h1>
+    <p>for working with<br/><b>Industrial Robots</b></p>
+  </div>
+  <div>
+    Robotics Lab<br/>
+    Printed on 8th Sept. 2022<br/>
+    Hermann Höhne, MSc.<br/>
+  </div>
+</div>
+<h2>Hazards</h2>
+<div class="padding">
+<img src="Symbole/ISO_7010_W020.svg">
+<ul>
+  <li>Danger from moving robots.
+</ul>
+</div>
+<h2>Rules of Conduct for Workplace Safety</h2>
+<div class="padding">
+<ul>
+  <li> Never work alone.
+  <li> Only one robot may be active at a time.
+  <li> As long as a robot is enabled, the emergency-stop-switch („Not-Aus“) must be accessible for quickly halting the robot.
+  <!--<li> The lab contains multiple robots. Some have emergency stop switches specific to that robot only. Before enabling a robot, all irrelevant emergency stop switches must be properly put away.-->
+  <li> It is verboten to use the robot while personnel or non-relevant objects are in the robot's area of influence.
+  <li> During experimental use (such as program tests), the robot must be moved at reduced speed (mode T1 at 100 % or mode AUT at 10 % of the maximum robot speed). This speed override setting must be asserted before enabling the robot.
+  <li> It is forbidden to program dangerous movements. Especially fast, rocking movements are forbidden. The robot must not crush anything (including the tool).
+  <li> All paths must be programmed in such manner that no collisions occur. Always run new or changed programs in test mode and watch the robot closely. Bear in mind that point-to-point (PTP) movements are not deterministic.
+  <li> After working with the robot, shut the robot down cleanly, then use the robot's main's switch.
+</ul>
+</div>
+<h2>Verhalten bei Störung und im Gefahrenfall</h2>
+<div class="padding">
+<ul>
+  <li> Betritt eine Person den Arbeitsbereich eines Roboters, muss der Roboter sofort angehalten werden. Die Not-Aus-Schaltung ist zu verwenden.
+  <li> Bei Gefahr einer Kollision muss der Roboter sofort angehalten werden.
+  <li> Bei mangelndem Fachwissen zur Handhabung von Geräten: Aufsicht fragen.
+  <li> Bei beschädigten oder fehlenden Schutzvorrichtungen: Aufsicht informieren.
+  <li> Schäden oder Mängel nur vom Fachmann beseitigen lassen.
+  <li> Arbeit bis zur Beseitigung des Mangels aus Sicherheitsgründen einstellen.
+  <li> Nach dem Auslösen der Sicherung zuerst die Quelle der Störung identifizieren.
+</ul>
+</div>
+<h2>Verhalten bei Unfällen – Erste Hilfe</h2>
+<div class="padding">
+<img src="Symbole/ISO_7010_E003.svg">
+<ul>
+  <li> Not-Aus verwenden, Maschinen abschalten, Arbeitsplätze sichern.
+  <li> Ersthelfer informieren.
+  <li> Verletzten betreuen.
+</ul>
+<div class="footer">
+Allgemeiner Notruf: 112, Krankentransport: 04103-4373<br/>
+Krankenhaus: Asklepios Westklinikum 040-81910<br/>
+Ersthelfer: 04103-8048-912<br/>
+</div>
+</div>
+</div><!-- Seite Industrial Robots -->
+
+<div class="seite">
+<div class="dreispaltig">
+  <div>
+    <img src="logo-fhwedel.svg" class="logo"><br/>
     Prof. Dr. E. Harms
   </div>
   <div>
@@ -212,7 +358,7 @@ On-Site First Aid: 04103-8048-912<br/>
   </div>
   <div>
     Robotik<br/>
-    Stand: 29. September 2021<br/>
+    Stand: 8. September 2022<br/>
     Hermann Höhne, MSc.<br/>
   </div>
 </div>
@@ -221,17 +367,17 @@ On-Site First Aid: 04103-8048-912<br/>
 <img src="Symbole/ISO_7010_W026.svg">
 <ul>
   <li>Defekte Akkus können sich selbst entzünden, insbesondere beim Ladevorgang.
+  <li>Offene Kontakte oder lose Ladekabel können Kurzschlüsse verursachen.
 </ul>
 </div>
 <h2>Schutzmaßnahmen und Verhaltensregeln</h2>
 <div class="padding">
 <img src="Symbole/ISO_7010_M002.svg">
 <ul>
-  <li>Der Akku darf nicht kurzgeschlossen werden.
-  <li>Die Zellenzahl ist zu beachten.
-  <li>Die Polung ist zu beachten.
+  <li>Der Akku darf nicht kurzgeschlossen werden. Die Steckverbindungen des Ladekabels zuerst akku-seitig lösen und am Ladegerät belassen. Zum Lösen schwergängiger Steckverbindungen ausschließlich nicht-leitende (Hebel-)Werkzeuge verwenden.
+  <li>Die Polung und Zellenzahl ist zu beachten.
   <li>Der Akku soll so bald wie möglich aufgeladen werden.
-  <li>Der Akku darf nur mit einem für LiPo Akkus eingestellten Ladegerät geladen werden.
+  <li>Der Akku darf nur mit einem für LiPo-Akkus eingestellten Ladegerät geladen werden.
   <li>Der Akku ist auf einer nicht-leitenden Unterlage und fern von leicht brennbaren Materialien zu laden.
   <li>Der Akku ist während des Ladens zu beaufsichtigen. Bläht er sich auf, ist der Ladevorgang unverzüglich abzubrechen.
   <li>Der Ladestand des Akkus soll zwischen 20% (ca. 3,7 V) und 80% (ca. 4,0 V) gehalten werden. Der Akku darf nicht tiefentladen werden.
@@ -266,16 +412,18 @@ On-Site First Aid: 04103-8048-912<br/>
   <li> Ersthelfer informieren.
   <li> Verletzten betreuen.
 </ul>
+<div class="footer">
 Allgemeiner Notruf: 112, Krankentransport: 04103-4373<br/>
 Krankenhaus: Asklepios Westklinikum 040-81910<br/>
 Ersthelfer: 04103-8048-912<br/>
+</div>
 </div>
 </div><!-- Seite Akkus -->
 
 <div class="seite">
 <div class="dreispaltig">
   <div>
-    <img src="logo-fhwedel.svg" style="height:3em;"><br/>
+    <img src="logo-fhwedel.svg" class="logo"><br/>
     Prof. Dr. E. Harms
   </div>
   <div>
@@ -284,7 +432,7 @@ Ersthelfer: 04103-8048-912<br/>
   </div>
   <div>
     Robotik<br/>
-    Stand: 29. September 2021<br/>
+    Stand: 8. September 2022<br/>
     Hermann Höhne, MSc.<br/>
   </div>
 </div>
@@ -296,6 +444,7 @@ Ersthelfer: 04103-8048-912<br/>
   <li>Mobile Roboter können gegen Gegenstände fahren, welche dann umfallen.
   <li>Gefahr von Schnittverletzungen wegen scharfkantiger Gehäuseteile.
   <li>Der mobile Roboter enthält einen Lithium Polymer Akkumulator (siehe separate Betriebsanweisung).
+  <li>Der Akku kann durch das Fahrzeug tiefentladen werden.
 </ul>
 </div>
 <h2>Schutzmaßnahmen und Verhaltensregeln</h2>
@@ -304,8 +453,9 @@ Ersthelfer: 04103-8048-912<br/>
 <ul>
   <li>Die Zellenzahl des Akkus ist zu beachten.
   <li>Die Polung des Akkus ist zu beachten.
+  <li>Der Steckverbindungstyp ist zu beachten.
   <li>Der Akku darf nicht kurzgeschlossen werden.
-  <li>Beim Ertönen des Ladestandswarnsignals muss der Akku unverzüglich entnommen und aufgeladen werden.
+  <li>Die Ladezustandsüberwachung muss zuerst angeschlossen und zuletzt getrennt werden. Beim Ertönen des Ladestandswarnsignals muss der Akku unverzüglich entnommen und aufgeladen werden.
   <li>Nach der Arbeit ist der Roboter ordnungsgemäß abzuschalten und zu verstauen.
 </ul>
 </div>
@@ -324,9 +474,11 @@ Ersthelfer: 04103-8048-912<br/>
   <li> Ersthelfer informieren.
   <li> Verletzten betreuen.
 </ul>
+<div class="footer">
 Allgemeiner Notruf: 112, Krankentransport: 04103-4373<br/>
 Krankenhaus: Asklepios Westklinikum 040-81910<br/>
 Ersthelfer: 04103-8048-912<br/>
+</div>
 </div>
 </div><!-- Seite mobile Roboter -->
 
